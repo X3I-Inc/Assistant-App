@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "b2H4P933sec=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\emilr\\source\\repos\\Auto Assistant\\Auto Assistant\\Auto Assistant.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\emilr\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
+    "C:\\Users\\emilr\\.nuget\\packages\\system.data.datasetextensions\\4.5.0\\system.data.datasetextensions.4.5.0.nupkg.sha512"
+  ],
+  "logs": []
+}
