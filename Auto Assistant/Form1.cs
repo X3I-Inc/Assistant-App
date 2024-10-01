@@ -18,13 +18,13 @@ namespace Auto_Assistant
 {
     public partial class Form1 : Form
     {
-        //List<string> Tasks = new List<String>();
+        public List<string> Tasks = new List<string>();
         public List<DateTime> TimeStart = new List<DateTime>();
         List<DateTime> TimeEnd = new List<DateTime>();
         public int currentTaskIndex = 0;
         DateTime NowDate = DateTime.Now;
         System.TimeSpan notify = new System.TimeSpan(0, 0, 30, 0);
-        
+
         public int milliseconds = 2000;
         public int MinutesLeft = 0;
         public Thread thread1;
@@ -33,23 +33,23 @@ namespace Auto_Assistant
         {
             InitializeComponent();
             thread1 = new Thread(new ThreadStart(MyFunction));
-            thread2 = new Thread(new ThreadStart(update_label));
+            //thread2 = new Thread(new ThreadStart(update_label));
             thread1.Start();
-            
 
-            
 
-            
 
-            
+
+
+
+
 
         }
         public void MyFunction()
         {
-            TimeStart.Add(new DateTime(2024, 9, 30, 20, 15, 0));
+            /*TimeStart.Add(new DateTime(2024, 9, 30, 20, 15, 0));
             TimeEnd.Add(new DateTime(2024, 9, 30, 20, 25, 0));
             TimeStart.Add(new DateTime(2024, 9, 30, 20, 35, 0));
-            TimeEnd.Add(new DateTime(2024, 9, 30, 20, 45, 0));
+            TimeEnd.Add(new DateTime(2024, 9, 30, 20, 45, 0));*/
 
             do
             {
@@ -79,22 +79,27 @@ namespace Auto_Assistant
                 }
                 Thread.Sleep(milliseconds);
 
-            } while (currentTaskIndex < TimeEnd.Count());
+            } while (currentTaskIndex < Tasks.Count());
             // Some work here
         }
-        public void update_label()
-        {
-            label1.Text = ($"you got work in {MinutesLeft} minutes" + NowDate);
-            label1.Refresh();
-        }
-            private void Form1_Load(object sender, EventArgs e)
+        /*  public void update_label()
+          {
+              label1.Text = ($"you got work in {MinutesLeft} minutes" + NowDate);
+              label1.Refresh();
+          }*/
+        private void Form1_Load(object sender, EventArgs e)
         {
 
         }
 
-       
+
 
         private void label1_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
         {
 
         }
