@@ -13,6 +13,7 @@
         /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
         {
+
             if (disposing && (components != null))
             {
                 components.Dispose();
@@ -35,6 +36,8 @@
             label2 = new System.Windows.Forms.Label();
             label3 = new System.Windows.Forms.Label();
             label4 = new System.Windows.Forms.Label();
+            dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
             SuspendLayout();
             // 
             // label1
@@ -63,6 +66,7 @@
             textBox1.Name = "textBox1";
             textBox1.Size = new System.Drawing.Size(100, 23);
             textBox1.TabIndex = 2;
+            textBox1.TextChanged += textBox1_TextChanged;
             // 
             // button1
             // 
@@ -72,12 +76,13 @@
             button1.TabIndex = 5;
             button1.Text = "Submit";
             button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // label2
             // 
             label2.AutoSize = true;
             label2.Font = new System.Drawing.Font("Segoe UI", 13F);
-            label2.Location = new System.Drawing.Point(623, 157);
+            label2.Location = new System.Drawing.Point(686, 158);
             label2.Name = "label2";
             label2.Size = new System.Drawing.Size(97, 25);
             label2.TabIndex = 6;
@@ -87,7 +92,7 @@
             // 
             label3.AutoSize = true;
             label3.Font = new System.Drawing.Font("Segoe UI", 13F);
-            label3.Location = new System.Drawing.Point(623, 187);
+            label3.Location = new System.Drawing.Point(692, 189);
             label3.Name = "label3";
             label3.Size = new System.Drawing.Size(91, 25);
             label3.TabIndex = 7;
@@ -98,17 +103,39 @@
             // 
             label4.AutoSize = true;
             label4.Font = new System.Drawing.Font("Segoe UI", 13F);
-            label4.Location = new System.Drawing.Point(623, 218);
+            label4.Location = new System.Drawing.Point(692, 223);
             label4.Name = "label4";
             label4.Size = new System.Drawing.Size(85, 25);
             label4.TabIndex = 8;
             label4.Text = "End Time";
+            // 
+            // dateTimePicker1
+            // 
+            dateTimePicker1.CustomFormat = "yyyy.MM.dd hh:mm";
+            dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            dateTimePicker1.Location = new System.Drawing.Point(486, 189);
+            dateTimePicker1.Name = "dateTimePicker1";
+            dateTimePicker1.Size = new System.Drawing.Size(200, 23);
+            dateTimePicker1.TabIndex = 9;
+            dateTimePicker1.ValueChanged += dateTimePicker1_ValueChanged;
+            // 
+            // dateTimePicker2
+            // 
+            dateTimePicker2.CustomFormat = "yyyy.MM.dd hh:mm";
+            dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            dateTimePicker2.Location = new System.Drawing.Point(486, 223);
+            dateTimePicker2.Name = "dateTimePicker2";
+            dateTimePicker2.Size = new System.Drawing.Size(200, 23);
+            dateTimePicker2.TabIndex = 10;
+            dateTimePicker2.ValueChanged += dateTimePicker2_ValueChanged;
             // 
             // Form1
             // 
             AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             ClientSize = new System.Drawing.Size(800, 450);
+            Controls.Add(dateTimePicker2);
+            Controls.Add(dateTimePicker1);
             Controls.Add(label4);
             Controls.Add(label3);
             Controls.Add(label2);
@@ -132,6 +159,9 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker dateTimePicker2;
+
     }
 }
 

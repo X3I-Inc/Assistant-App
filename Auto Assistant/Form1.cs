@@ -32,6 +32,7 @@ namespace Auto_Assistant
         public Form1()
         {
             InitializeComponent();
+            
             thread1 = new Thread(new ThreadStart(MyFunction));
             //thread2 = new Thread(new ThreadStart(update_label));
             thread1.Start();
@@ -46,11 +47,19 @@ namespace Auto_Assistant
         }
         public void MyFunction()
         {
-            /*TimeStart.Add(new DateTime(2024, 9, 30, 20, 15, 0));
-            TimeEnd.Add(new DateTime(2024, 9, 30, 20, 25, 0));
-            TimeStart.Add(new DateTime(2024, 9, 30, 20, 35, 0));
+            
+           /* TimeStart.Add(new DateTime(2024, 10, 2, 13, 10, 0));
+            TimeEnd.Add(new DateTime(2024, 10, 2, 13, 25, 0));
+            Tasks.Add("Some Task");*/
+            /*TimeStart.Add(new DateTime(2024, 9, 30, 20, 35, 0));
             TimeEnd.Add(new DateTime(2024, 9, 30, 20, 45, 0));*/
-
+            while(Tasks.Count() <= 0)
+            {
+                if(Tasks.Count() > 0)
+                {
+                    break;
+                }
+            }
             do
             {
 
@@ -80,6 +89,8 @@ namespace Auto_Assistant
                 Thread.Sleep(milliseconds);
 
             } while (currentTaskIndex < Tasks.Count());
+
+            
             // Some work here
         }
         /*  public void update_label()
@@ -100,6 +111,30 @@ namespace Auto_Assistant
         }
 
         private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            TimeStart.Add(dateTimePicker1.Value);
+            TimeEnd.Add(dateTimePicker2.Value);
+            Tasks.Add(textBox1.Text);
+            
+            listBox1.Items.Add(textBox1.Text);
+        }
+
+        private void dateTimePicker2_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
         {
 
         }

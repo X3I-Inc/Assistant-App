@@ -1,16 +1,17 @@
+C:\Users\emilr\source\repos\Auto Assistant\Auto Assistant\bin\Debug\net8.0-windows\Auto Assistant.exe
+C:\Users\emilr\source\repos\Auto Assistant\Auto Assistant\bin\Debug\net8.0-windows\Auto Assistant.dll
 C:\Users\emilr\source\repos\Auto Assistant\Auto Assistant\obj\Debug\net8.0-windows\Auto_Assistant.Form1.resources
 C:\Users\emilr\source\repos\Auto Assistant\Auto Assistant\obj\Debug\net8.0-windows\Auto_Assistant.Properties.Resources.resources
 C:\Users\emilr\source\repos\Auto Assistant\Auto Assistant\obj\Debug\net8.0-windows\Auto Assistant.csproj.GenerateResource.cache
 C:\Users\emilr\source\repos\Auto Assistant\Auto Assistant\obj\Debug\net8.0-windows\Auto Assistant.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\emilr\source\repos\Auto Assistant\Auto Assistant\obj\Debug\net8.0-windows\Auto Assistant.csproj.CoreCompileInputs.cache
-C:\Users\emilr\source\repos\Auto Assistant\Auto Assistant\bin\Debug\net8.0-windows\Auto Assistant.exe
-C:\Users\emilr\source\repos\Auto Assistant\Auto Assistant\bin\Debug\net8.0-windows\Auto Assistant.dll.config
-C:\Users\emilr\source\repos\Auto Assistant\Auto Assistant\bin\Debug\net8.0-windows\Auto Assistant.deps.json
-C:\Users\emilr\source\repos\Auto Assistant\Auto Assistant\bin\Debug\net8.0-windows\Auto Assistant.runtimeconfig.json
-C:\Users\emilr\source\repos\Auto Assistant\Auto Assistant\bin\Debug\net8.0-windows\Auto Assistant.dll
-C:\Users\emilr\source\repos\Auto Assistant\Auto Assistant\bin\Debug\net8.0-windows\Auto Assistant.pdb
+C:\Users\emilr\source\repos\Auto Assistant\Auto Assistant\obj\Debug\net8.0-windows\Auto Assistant.sourcelink.json
 C:\Users\emilr\source\repos\Auto Assistant\Auto Assistant\obj\Debug\net8.0-windows\Auto Assistant.dll
 C:\Users\emilr\source\repos\Auto Assistant\Auto Assistant\obj\Debug\net8.0-windows\refint\Auto Assistant.dll
 C:\Users\emilr\source\repos\Auto Assistant\Auto Assistant\obj\Debug\net8.0-windows\Auto Assistant.pdb
+C:\Users\emilr\source\repos\Auto Assistant\Auto Assistant\bin\Debug\net8.0-windows\Auto Assistant.dll.config
+C:\Users\emilr\source\repos\Auto Assistant\Auto Assistant\bin\Debug\net8.0-windows\Auto Assistant.deps.json
+C:\Users\emilr\source\repos\Auto Assistant\Auto Assistant\bin\Debug\net8.0-windows\Auto Assistant.runtimeconfig.json
+C:\Users\emilr\source\repos\Auto Assistant\Auto Assistant\bin\Debug\net8.0-windows\Auto Assistant.pdb
 C:\Users\emilr\source\repos\Auto Assistant\Auto Assistant\obj\Debug\net8.0-windows\Auto Assistant.genruntimeconfig.cache
 C:\Users\emilr\source\repos\Auto Assistant\Auto Assistant\obj\Debug\net8.0-windows\ref\Auto Assistant.dll
